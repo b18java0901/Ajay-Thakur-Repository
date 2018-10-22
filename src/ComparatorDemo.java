@@ -71,8 +71,13 @@ public class ComparatorDemo {
 		a1.add(s2);
 		a1.add(s3);
 		a1.add(s4);
+		
 		for(Student s:a1)
 			System.out.println(s.getName()+" "+s.getHeight());
+//		for(int i=0;i<a1.size();i++)
+//		{
+//			System.out.println(a1.get(i).getName()+" "+a1.get(i).getHeight());
+//		}
 		
 		char check='y';
 		while(check=='y')
@@ -100,6 +105,7 @@ public class ComparatorDemo {
 	        	}
 		System.out.println("do you want to continue enter y otherwise n");
 		check=ss.readLine().charAt(0);
+		System.out.println(a1.get(2).getName());
 		
 		
 
