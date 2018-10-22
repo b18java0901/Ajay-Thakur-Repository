@@ -23,7 +23,7 @@ public class Atm {
         int user=Integer.parseInt(s.readLine());
         if(user==pin)
         { 
-        }
+        
         	do {System.out.println("enter 1 for withdraw");
         	System.out.println("enter 2 for deposit");
         	System.out.println("enter 3 for balance enquiry");
@@ -74,7 +74,7 @@ public class Atm {
         	System.out.println("Thanks for using");
 //        	System.exit(0);
         }
-        
+	else
         {
         	try {
 				throw new AtmException("invalid pin");
@@ -82,7 +82,9 @@ public class Atm {
 				
 				e.printStackTrace();
 			}
+        	
         }
         
-}    
+}   
+}
 	
